@@ -1,0 +1,63 @@
+.buttonMainClass {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  backdrop-filter: blur(30px);
+  width: 100%;
+  border-radius: 10px;
+}
+
+.inputClass {
+  text-align: center;
+  margin: 20px auto;
+  padding: 5px;
+  width: 70%;
+  border-radius: 2px;
+  font-size: 40px;
+}
+/* area of Learning how to remove the arrow keys from input field */
+
+input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    input[type=number] {
+        -moz-appearance: textfield; /* Firefox */
+    }
+
+/* Learning Ends */
+
+button {
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .buttonMainClass {
+    width: 70%;
+    margin-left: 34%;
+  }
+
+  button {
+    font-size: 27px !important;
+  }
+}
+
+
+@media (max-width: 378px) {
+  .inputClass {
+    height: 30px;
+    font-size: 30px;
+  }
+}

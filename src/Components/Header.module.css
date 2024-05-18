@@ -1,0 +1,21 @@
+.headerClass {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  white-space: nowrap;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .headerClass {
+    writing-mode: horizontal-tb;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 378px) {
+  .headerClass {
+    font-size: 30px;
+  }
+}
